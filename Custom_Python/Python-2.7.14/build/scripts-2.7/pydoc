@@ -1,0 +1,5 @@
+#!/root/Desktop/Edgescan_Automater_2/build/bin/python2.7
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()
