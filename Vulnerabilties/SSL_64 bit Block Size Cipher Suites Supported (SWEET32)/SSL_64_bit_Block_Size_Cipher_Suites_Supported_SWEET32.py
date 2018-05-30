@@ -1,4 +1,4 @@
-#!../Custom_Python/build/bin/python2
+#!../../Custom_Python/build/bin/python2
 # Description: This script will test to see if the target site is vulnerable to sweet 32 attacks
 # Author: Zach Fleming
 # Date: 09/04/2018
@@ -56,24 +56,20 @@ class SSL_64_bit_Block_Size_Cipher_Suites_Supported_SWEET32():
 
 				# CREATE SOCKET
 				sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-				#sock.settimeout(5) # set timeout to 5 seconds
-				# WRAP Socket --> Convert to SSL and specify protocol Version
+				sock.settimeout(5) # set timeout to 5 seconds
+				
+				#WRAP Socket --> Convert to SSL and specify protocol Version
 				wrappedSocket = ssl.wrap_socket(sock, ssl_version=protocol, ciphers = self.CIPHERS)
-				raw_input("working here 1")
+	
 				# Connect to client with ip x and port y
-				print host
-				print port
-				try:
-					wrappedSocket.connect((host, port))
-				except Exception as e:
-					print e
-				raw_input("2")
+				wrappedSocket.connect((host, port))
+				
 				cipher = wrappedSocket.cipher() # get cipher used to initate connection
 				ssl_version =  wrappedSocket.version() # get the ssl version used to initate connection
 				
 				# Close the Connection
 				wrappedSocket.close()
-				raw_input("working here 2")
+
 				# Successfully Connected So add to results
 				print colored ("Successfully Connected To " + host + ":" + repr(port) + " Using " + ssl_version + " With Cipher " + cipher[0] + " ...[VULNERABLE]" ,'green')
 				self.success_list.append(client)
@@ -98,13 +94,13 @@ class SSL_64_bit_Block_Size_Cipher_Suites_Supported_SWEET32():
 
 		# Display Clients that are not vulnerable
 		if len(self.success_list) !=0:
-			print colored("\nCache Contorl Properly Enforced ",'green')
+			print colored("\nClients THat Support 64 bit Ciphers --> Indicating Vulnerable To Sweet 32",'green')
 			for element in self.success_list:
 				print colored(element,'yellow')
 			
 		# DIsplay Clients That Are Possibly Vulnerable
 		if len(self.manual_recheck_list) !=0:
-			print colored("\nNo Cache Detected --> Recommended That These Be Manually Verified",'red')
+			print colored("\nNo 64 bit Ciphers Detected--> Recommended That These Be Manually Verified",'red')
 			for element in self.manual_recheck_list:
 				print colored(element,'yellow')
 			
