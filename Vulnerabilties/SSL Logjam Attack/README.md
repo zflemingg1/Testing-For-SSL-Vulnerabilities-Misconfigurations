@@ -22,7 +22,7 @@ To scan a text file containg urls, the file must be formatted as follows. Each u
 The logic behind the porgram is that it will connect to a given url with a vulnerable 64 bit cipher. If the connection is successful then it is assumed that the target is vulnerable. If it is unsuccessful then it is assumed that it's not.
 
 ### Screenshots
-![alt text](screenshots/logjam_overview2.png "Overview of Program")
+![alt text](screenshots/logjam_overview.png "Overview of Program")
 
 ![alt text](screenshots/logjam_overview2.png "Sample Output")
 
