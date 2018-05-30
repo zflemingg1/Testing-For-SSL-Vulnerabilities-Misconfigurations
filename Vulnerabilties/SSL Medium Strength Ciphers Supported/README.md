@@ -1,4 +1,4 @@
-# Zach-Scripts
+# SSL Medium Strength Ciphers Supported
 
 ### Description
 

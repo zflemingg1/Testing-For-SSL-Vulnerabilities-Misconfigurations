@@ -1,4 +1,4 @@
-# Zach-Scripts
+# SSL Cert Using Weak Hashing Algorithim
 
 ### Description
 

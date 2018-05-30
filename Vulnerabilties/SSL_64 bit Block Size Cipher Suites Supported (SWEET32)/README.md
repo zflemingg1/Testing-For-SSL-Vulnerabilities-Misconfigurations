@@ -1,4 +1,4 @@
-# Zach-Scripts
+# SSL_64 bit Block Size Cipher Suites Supported (SWEET32)
 
 ### Description
 
