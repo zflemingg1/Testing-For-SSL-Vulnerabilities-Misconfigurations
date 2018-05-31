@@ -104,7 +104,7 @@ def main():
 	
 	# Display tool info to the user
 	print colored(30 * "-", 'cyan')
-	print colored("\nSSL Certificate Expiry Detector", 'cyan',  attrs=['bold'])
+	print colored("\nSSL Certificate Weak Hash Detector", 'cyan',  attrs=['bold'])
 	print colored(30 * "-", 'cyan')
 	print colored("Author: Zach Fleming", 'yellow')
 	print colored("Date: 09/04/18", 'green')

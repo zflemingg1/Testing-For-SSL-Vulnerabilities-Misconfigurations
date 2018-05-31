@@ -16,12 +16,14 @@ To use the program simply open up a terminal and run it with "python cacheable_h
 
 The program has two options. It can either can a single url, or a list of target urls. 
 To scan a single url you must include the full url and port number. For example https://www.samplesite.com:443
-To scan a text file containg urls, the file must be formatted as follows. Each url must be on a new line and with the following format https://www.samplesite.com:443. A sample text file ahs been included also. 
+To scan a text file containg urls, the file must be formatted as follows. Each url must be on a new line and with the following format https://www.samplesite.com:443. 
+A sample text file ahs been included also. 
 
 The logic behind the porgram is that it will connect to a given url and check the repsone headers to see if they contain the cache-control: no-store header and the pragma:no-cache header. If both of these are vulnerable then the url is configured correctly and is not vulnerable to cacheable https repsonse attacks. If these headers are not present then it is assumed that they are. 
 
 ### Screenshots
 ![alt text](screenshots/Cacheable_HTTPS_Overview.png "Overview of Program")
+
 ![alt text](screenshots/Cacheable_HTTPS_Output.png "Sample Output")
 
 
