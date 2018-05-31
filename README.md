@@ -17,9 +17,9 @@ Scripts To Test For Various SSL Vulnerabilties/Misconfigurations. Colour Coded o
 Navigate to Vulnerabilites folder for more information on each tool. 
 
 ### Sample Output
-![alt text]("Vulnerabilties/Cacheable HTTPS Response/screenshots/Cacheable_HTTPS_Overview.png" "Sample Output")
+![alt text](Vulnerabilties/Cacheable%20HTTPS%20Response/screenshots/Cacheable_HTTPS_Overview.png "Sample Output")
 
-![alt text]("Vulnerabilties/Cacheable HTTPS Response/screenshots/Cacheable_HTTPS_Output.png" "Sample Output")
+![alt text](Vulnerabilties/Cacheable%20HTTPS%20Response/screenshots/Cacheable_HTTPS_Output.png "Sample Output")
 
 ### Built With
 
