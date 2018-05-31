@@ -1,5 +1,5 @@
 # SSL-Vulnerabilities
-Scripts To Test For Various SSL Vulnerabilties/Misconfigurations
+Scripts To Test For Various SSL Vulnerabilties/Misconfigurations. Colour Coded output to make it easier to read for the user.
 
 ### Vulnerabilities/ Misconfigurations That Can Be Tested --> More To Come
 * 'Cacheable HTTPS response'
@@ -15,6 +15,11 @@ Scripts To Test For Various SSL Vulnerabilties/Misconfigurations
 * 'SSL 64-bit Block Size Cipher Suites Supported (SWEET32)'
 
 Navigate to Vulnerabilites folder for more information on each tool. 
+
+### Sample Output
+![alt text]("Vulnerabilties/Cacheable HTTPS Response/screenshots/Cacheable_HTTPS_Overview.png" "Sample Output")
+
+![alt text]("Vulnerabilties/Cacheable HTTPS Response/screenshots/Cacheable_HTTPS_Output.png" "Sample Output")
 
 ### Built With
 
